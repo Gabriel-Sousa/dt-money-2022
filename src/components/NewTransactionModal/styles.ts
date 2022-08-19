@@ -22,6 +22,12 @@ export const CloseButton = styled(Dialog.Close)`
 `
 
 export const Content = styled(Dialog.Content)`
+  @media (max-width: 1080px) {
+    min-width: 26rem;
+
+    padding: 2rem 1.5rem;
+  }
+
   min-width: 32rem;
   border-radius: 6px;
   padding: 2.5rem 3rem;

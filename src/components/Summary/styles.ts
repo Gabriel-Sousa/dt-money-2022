@@ -10,6 +10,14 @@ export const SummaryContainer = styled.section`
   margin: 0 auto;
   padding: 0 1.5rem;
 
+  @media (max-width: 1080px) {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 90%;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;

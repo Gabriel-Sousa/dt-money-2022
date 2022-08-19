@@ -36,6 +36,55 @@ export const TransactionsTable = styled.table`
   }
 `
 
+export const TransactionsMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  margin-top: 0.875rem;
+
+  .transactions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    padding: 1.25rem;
+    /* max-width: 20rem; */
+
+    border-radius: 6px;
+
+    background-color: ${(props) => props.theme['gray-700']};
+
+    .transactionsTittle {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: ${(props) => props.theme['gray-300']};
+    }
+
+    .transactionsPrice {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      color: ${(props) => props.theme['gray-500']};
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+`
+
 interface PriceHightLightProps {
   variant: 'income' | 'outcome'
 }
